@@ -1,0 +1,30 @@
+body {
+	// height: 100%;
+	background: url('../images/mountain_cloud.jpg') no-repeat center center fixed;
+	@include backgroundSize(auto 100%);
+}
+
+.entry_logo {
+	margin-top: 100px;
+}
+
+.entry_heading {
+	//width: 110px;
+}
+
+.entry_btn {
+	// margin-left: 25px;
+	// margin-right: 25px;
+	margin-top: 15px;
+	background-color: transparent;
+	border: 1px solid white;
+	text-align: center;
+
+	&.entry_btn_bold {
+		margin-top: 30px;
+		border: none;
+		background-color: $dark-blue;
+
+	}
+}
+

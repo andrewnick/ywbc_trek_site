@@ -1,0 +1,143 @@
+/* mixins to make our lives easier */
+ 
+@mixin respond($breakpoint){
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+ 
+ 
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+ 
+@mixin transition($property, $duration, $ease, $delay) {
+  -webkit-transition: $property $duration $ease $delay;
+  -moz-transition: $property $duration $ease $delay;
+  -o-transition: $property $duration $ease $delay;
+  -ms-transition: $property $duration $ease $delay;
+  transition: $property $duration $ease $delay;
+}
+ 
+@mixin manyTransitions( $list, $time, $easing, $delay ) {
+    $transitions: ();
+ 
+    @each $transition in $list {
+        $trans: unquote( "#{$transition} #{$time} #{$easing} #{$delay}" );
+        $transitions: append( $transitions, $trans, comma );
+    }
+ 
+    -webkit-transition: #{$transitions};
+    -moz-transition: #{$transitions};
+    -o-transition: #{$transitions};
+    -ms-transition: #{$transitions};
+    transition: #{$transitions};
+}
+ 
+// use - @include manyTransitions( (top, box-shadow), 0.3s, ease-in-out, 0);
+// put your properties that you want to change inside a bracketed list (top, box-shadow)
+// followed by the timing, easing and delay as comma seperated values
+ 
+ 
+@mixin animation($name, $duration, $ease, $delay, $iteration: 1, $direction: both) {
+  -webkit-animation: $name $duration $ease $delay $iteration $direction;
+  -moz-animation: $name $duration $ease $delay $iteration $direction;
+  -o-animation: $name $duration $ease $delay $iteration $direction;
+  -ms-animation: $name $duration $ease $delay $iteration $direction;
+  animation: $name $duration $ease $delay $iteration $direction;
+}
+ 
+// use - @include animation(fade, 1.2s, ease-in-out, 0);
+ 
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { @content; }
+  @-moz-keyframes #{$name} { @content; }
+  @-o-keyframes #{$name} { @content; }
+  @-ms-keyframes #{$name} { @content; }
+  @keyframes #{$name} { @content; }
+}
+ 
+/* use :
+ 
+@include keyframes(fade){
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+ 
+*/
+
+@mixin backgroundSize($size) {
+    -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -o-background-size: $size;
+    background-size: $size;
+}
+
+
+//
+// Border mixin
+//
+// This mixin extends the function of creating borders
+
+@mixin addBorder($borderColor, $width: 3px, $top: false, $left: false, $bottom: false, $right: false){
+
+  @if $top {border-top: $width solid  $borderColor};
+  @if $left {border-left: $width solid  $borderColor};
+  @if $bottom {border-bottom: $width solid  $borderColor};
+  @if $right {border-right: $width solid  $borderColor};
+
+}
+
+// Adds the following properties to element
+@mixin fontSizeColour($sz, $fontColour){
+  font-size: $sz;
+  color: $fontColour;
+}
+
+// Create a button with site styling
+// padding-base-verticle and padding-base-horizontal are bootstrap defaults
+@mixin styleBtn($line_width: 4px) {
+ 
+  outline: none;
+  background-color: $brown;
+  color: $yellow;
+
+  &:default {
+    background-color: $brown;
+    @include addBorder($light_brown, $width: $line_width, $bottom: true);
+  }
+
+  &:active,
+  &.active {
+    border: none;
+    outline: none;
+    @include addBorder($light_brown, $width: $line_width, $top: true, $bottom: false);
+    @include addBorder($brown, $width: 1px, $left: true, $right: true); 
+    color: $beige;
+
+    &:focus {
+      color: $beige;
+      outline: none;
+    }
+    
+  }
+
+  &:hover {
+    color: $beige;
+  }
+
+  &:focus {
+      color: $yellow;
+      outline: thin dotted;
+      outline: 3px auto $brown;
+      outline-offset: -2px;
+  }
+}
