@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-	<?php require_once('includes/head.php') ?>
+<?php 
+    require_once('includes/head.php');
+    require_once('includes/database_function.php');
+
+    $db =  getDbConnection();
+
+   ?>
 <body>
 
 	<main>
 
 		<?php 
 
-      if(isset($_POST['username'])) {
+      if(isset($_POST['user_id'])) {
 
-          require_once('includes/map.php');
+          require_once('includes/home.php');
 
       } else {
 
-        require_once('includes/entry.php');
+          require_once('includes/entry.php');
 
       }
-
 
     ?>
 
@@ -24,10 +29,9 @@
 
 
 	  <script type="text/javascript" src="assets/js/jquery.js"></script> 
-    <script type="text/javascript" src="assets/js/jquery.fittext.js"></script>  
+    <!-- // <script type="text/javascript" src="assets/js/jquery.fittext.js"></script>   -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS0N0dpiNp-SYnIaH-8ojcyAws1SxYsTg"></script>
     <script type="text/javascript" src="assets/js/proj4.js"></script>
-    <!-- // <script src="http://js.arcgis.com/3.10/"></script> -->
     <script type="text/javascript" src="assets/js/main.js"></script>
       
     <!-- add Modernizr -->

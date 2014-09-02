@@ -21,7 +21,7 @@ function getDbConnection(){
 	$databaseHost = 'localhost';
 	$username	  = 'root';
 	$password	  = '';
-	$databaseName = 'exampledb';
+	$databaseName = 'trek';
  
 	// Create a variable called '$connection'
 	// that will hold an instance of a mysqli connection.
