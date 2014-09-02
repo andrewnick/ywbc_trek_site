@@ -7,19 +7,20 @@
 			<h1 class="col-xs-12 entry_heading">TREK</h1>
 		</div>
 
-		<a href="#" class="col-xs-12 entry_btn_link" id="loginBtn">
-			<div class="entry_btn entry_btn_bold">
+
+
+		<form action="" method="post" role="form">
+			
+			<button type="submit" class="col-xs-12 entry_btn entry_btn_bold" id="loginBtn">
 				<h5>Login</h5>
-			</div>
-		</a>			
+			</button>		
 
-		<a href="#" class="col-xs-12 entry_btn_link" id="signUpBtn">
-			<div class="entry_btn">
-				<h5>Sign Up</h5>
-			</div>
-		</a>
+			<a href="#" class="col-xs-12 entry_btn_link" id="signUpBtn">
+				<div class="entry_btn">
+					<h5>Sign Up</h5>
+				</div>
+			</a>
 
-		<form action="" role="form">
 			<div class="form-group">
 			
 				<label for="username">Username</label>

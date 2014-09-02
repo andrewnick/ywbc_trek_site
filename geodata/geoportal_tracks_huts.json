@@ -1,0 +1,461 @@
+{
+  "title" : "Geoportal GeoRSS.",
+  "description" : "Most recently updated metadata documents.",
+  "copyright" : "",
+  "provider" : "http:\/\/geoportal.doc.govt.nz\/geoportal",
+  "updated" : "2014-07-27T21:11:28Z",
+  "source" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/rest\/find\/document?searchText=doc%20tracks&start=1&max=10&f=pjson&dojo.preventCache=1409173884816",
+  "more" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/rest\/find\/document?searchText=doc%20tracks&start=11&max=10&f=pjson&dojo.preventCache=1409173884816",
+  "records" : [
+    {
+      "title" : "DOC Tracks",
+      "id" : "{8E7B551C-8CB2-4C87-98B2-1196B265F7DA}",
+      "updated" : "2011-10-10T04:41:44Z",
+      "summary" : "Department of Conservation - Track Centrelines. Spatial representation of DOC managed track centrelines. Data shows actively managed open tracks. Closed tracks are not shown.\n\nData capture accuracy is defined as:\n\n (1) Differential GPS data capture with i...",
+      "bbox" : [-170.0, -52.0, 156.0, -27.5],
+      "geometry" : {
+        "type" : "Polygon",
+        "coordinates" : [
+          [
+            [-170.0,-52.0], [-170.0,-27.5], [156.0,-27.5], [156.0,-52.0], [-170.0,-52.0]
+          ]
+        ]
+      },
+      "links" : [
+        {
+          "href" : "http://geoportal.doc.govt.nz/ArcGIS/rest/services/GeoportalServices/DOC_Tracks/MapServer",
+          "type" : "open"
+        },
+        {
+          "href" : "http://geoportal.doc.govt.nz/geoportal/catalog/search/resource/livedata-preview.page?uuid=%7B8E7B551C-8CB2-4C87-98B2-1196B265F7DA%7D&url=http%3A%2F%2Fgeoportal.doc.govt.nz%2FArcGIS%2Frest%2Fservices%2FGeoportalServices%2FDOC_Tracks%2FMapServer&resourceType=ags&info=http%3A%2F%2Fgeoportal.doc.govt.nz%2Fgeoportal%2Frest%2Fdocument%3Ff%3Dhtml%26id%3D%257B8E7B551C-8CB2-4C87-98B2-1196B265F7DA%257D",
+          "type" : "preview"
+        },
+        {
+          "href" : "http://geoportal.doc.govt.nz/ArcGIS/rest/services/GeoportalServices/DOC_Tracks/MapServer/kml/mapImage.kmz",
+          "type" : "agskml"
+        },
+        {
+          "href" : "http://geoportal.doc.govt.nz/ArcGIS/rest/services/GeoportalServices/DOC_Tracks/MapServer?f=nmf",
+          "type" : "agsnmf"
+        },
+        {
+          "href" : "http://geoportal.doc.govt.nz/ArcGIS/rest/services/GeoportalServices/DOC_Tracks/MapServer?f=lyr",
+          "type" : "agslyr"
+        },
+        {
+          "href" : "http://geoportal.doc.govt.nz/geoportal/catalog/search/resource/details.page?uuid=%7B8E7B551C-8CB2-4C87-98B2-1196B265F7DA%7D",
+          "type" : "details"
+        },
+        {
+          "href" : "http://geoportal.doc.govt.nz/geoportal/rest/document?id=%7B8E7B551C-8CB2-4C87-98B2-1196B265F7DA%7D",
+          "type" : "metadata"
+        }
+      ]
+    },
+    {
+      "title" : "DOC Huts",
+      "id" : "{67407FA3-9A81-4746-8572-716E66CDCE04}",
+      "updated" : "2011-10-10T04:41:32Z",
+      "summary" : "Department of Conservation - Huts. Spatial representation of DOC managed huts represented as a centroid (point) using New Zealand Transverse Mercator co-ordinates.\n\n*****LICENCE***** \nThis work is licensed under the Creative Commons Attribution 3.0 New Ze...",
+      "bbox" : [-170.0, -52.0, 156.0, -27.5],
+      "geometry" : {
+        "type" : "Polygon",
+        "coordinates" : [
+          [
+            [-170.0,-52.0], [-170.0,-27.5], [156.0,-27.5], [156.0,-52.0], [-170.0,-52.0]
+          ]
+        ]
+      },
+      "links" : [
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Huts\/MapServer",
+          "type" : "open"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/catalog\/search\/resource\/livedata-preview.page?uuid=%7B67407FA3-9A81-4746-8572-716E66CDCE04%7D&url=http%3A%2F%2Fgeoportal.doc.govt.nz%2FArcGIS%2Frest%2Fservices%2FGeoportalServices%2FDOC_Huts%2FMapServer&resourceType=ags&info=http%3A%2F%2Fgeoportal.doc.govt.nz%2Fgeoportal%2Frest%2Fdocument%3Ff%3Dhtml%26id%3D%257B67407FA3-9A81-4746-8572-716E66CDCE04%257D",
+          "type" : "preview"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Huts\/MapServer\/kml\/mapImage.kmz",
+          "type" : "agskml"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Huts\/MapServer?f=nmf",
+          "type" : "agsnmf"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Huts\/MapServer?f=lyr",
+          "type" : "agslyr"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/catalog\/search\/resource\/details.page?uuid=%7B67407FA3-9A81-4746-8572-716E66CDCE04%7D",
+          "type" : "details"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/rest\/document?id=%7B67407FA3-9A81-4746-8572-716E66CDCE04%7D",
+          "type" : "metadata"
+        }
+      ]
+    },
+    {
+      "title" : "DOC Campsites",
+      "id" : "{6EDBFB4D-0189-4875-895E-F35FC23BB692}",
+      "updated" : "2011-10-10T04:41:24Z",
+      "summary" : "Department of Conservation - Campsites. Spatial representation of DOC managed campsites represented as a centroid (point) using New Zealand Transverse Mercator co-ordinates.\n\t\t\t\t\n*****LICENCE***** \nThis work is licensed under the Creative Commons Attribut...",
+      "bbox" : [-170.0, -52.0, 156.0, -27.5],
+      "geometry" : {
+        "type" : "Polygon",
+        "coordinates" : [
+          [
+            [-170.0,-52.0], [-170.0,-27.5], [156.0,-27.5], [156.0,-52.0], [-170.0,-52.0]
+          ]
+        ]
+      },
+      "links" : [
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Campsites\/MapServer",
+          "type" : "open"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/catalog\/search\/resource\/livedata-preview.page?uuid=%7B6EDBFB4D-0189-4875-895E-F35FC23BB692%7D&url=http%3A%2F%2Fgeoportal.doc.govt.nz%2FArcGIS%2Frest%2Fservices%2FGeoportalServices%2FDOC_Campsites%2FMapServer&resourceType=ags&info=http%3A%2F%2Fgeoportal.doc.govt.nz%2Fgeoportal%2Frest%2Fdocument%3Ff%3Dhtml%26id%3D%257B6EDBFB4D-0189-4875-895E-F35FC23BB692%257D",
+          "type" : "preview"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Campsites\/MapServer\/kml\/mapImage.kmz",
+          "type" : "agskml"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Campsites\/MapServer?f=nmf",
+          "type" : "agsnmf"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Campsites\/MapServer?f=lyr",
+          "type" : "agslyr"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/catalog\/search\/resource\/details.page?uuid=%7B6EDBFB4D-0189-4875-895E-F35FC23BB692%7D",
+          "type" : "details"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/rest\/document?id=%7B6EDBFB4D-0189-4875-895E-F35FC23BB692%7D",
+          "type" : "metadata"
+        }
+      ]
+    },
+    {
+      "title" : "DOC Public Conservation Areas",
+      "id" : "{D96C6811-6DC7-4430-BB4B-EDE6DA417778}",
+      "updated" : "2013-09-29T19:52:09Z",
+      "summary" : "Spatial representation of DOC's management units defined by various acts of parliament and legislation. The attributes in this dataset are derived from the (NaPALIS) National Property and Land Information System, which is a centralised database for all La...",
+      "bbox" : [-170.0, -52.0, 156.0, -27.5],
+      "geometry" : {
+        "type" : "Polygon",
+        "coordinates" : [
+          [
+            [-170.0,-52.0], [-170.0,-27.5], [156.0,-27.5], [156.0,-52.0], [-170.0,-52.0]
+          ]
+        ]
+      },
+      "links" : [
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Public_Conservation_Areas\/MapServer",
+          "type" : "open"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/catalog\/search\/resource\/livedata-preview.page?uuid=%7BD96C6811-6DC7-4430-BB4B-EDE6DA417778%7D&url=http%3A%2F%2Fgeoportal.doc.govt.nz%2FArcGIS%2Frest%2Fservices%2FGeoportalServices%2FDOC_Public_Conservation_Areas%2FMapServer&resourceType=ags&info=http%3A%2F%2Fgeoportal.doc.govt.nz%2Fgeoportal%2Frest%2Fdocument%3Ff%3Dhtml%26id%3D%257BD96C6811-6DC7-4430-BB4B-EDE6DA417778%257D",
+          "type" : "preview"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Public_Conservation_Areas\/MapServer\/kml\/mapImage.kmz",
+          "type" : "agskml"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Public_Conservation_Areas\/MapServer?f=nmf",
+          "type" : "agsnmf"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Public_Conservation_Areas\/MapServer?f=lyr",
+          "type" : "agslyr"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/catalog\/search\/resource\/details.page?uuid=%7BD96C6811-6DC7-4430-BB4B-EDE6DA417778%7D",
+          "type" : "details"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/rest\/document?id=%7BD96C6811-6DC7-4430-BB4B-EDE6DA417778%7D",
+          "type" : "metadata"
+        }
+      ]
+    },
+    {
+      "title" : "DOC Marine Mammal Sanctuaries",
+      "id" : "{DE6CC153-CDAA-48D4-A71E-025386FA4D64}",
+      "updated" : "2012-07-15T03:21:41Z",
+      "summary" : "Marine Mammal Sanctuaries create a permanent refuge for marine mammals. Such sanctuaries may prohibit activities known to harm particular marine mammal species such as dolphins, whales, seals and sea lions.\nUnder the Marine Mammals Protection Act 1978, th...",
+      "bbox" : [-170.0, -52.0, 156.0, -27.5],
+      "geometry" : {
+        "type" : "Polygon",
+        "coordinates" : [
+          [
+            [-170.0,-52.0], [-170.0,-27.5], [156.0,-27.5], [156.0,-52.0], [-170.0,-52.0]
+          ]
+        ]
+      },
+      "links" : [
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Marine_Mammal_Sanctuaries\/MapServer",
+          "type" : "open"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/catalog\/search\/resource\/livedata-preview.page?uuid=%7BDE6CC153-CDAA-48D4-A71E-025386FA4D64%7D&url=http%3A%2F%2Fgeoportal.doc.govt.nz%2FArcGIS%2Frest%2Fservices%2FGeoportalServices%2FDOC_Marine_Mammal_Sanctuaries%2FMapServer&resourceType=ags&info=http%3A%2F%2Fgeoportal.doc.govt.nz%2Fgeoportal%2Frest%2Fdocument%3Ff%3Dhtml%26id%3D%257BDE6CC153-CDAA-48D4-A71E-025386FA4D64%257D",
+          "type" : "preview"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Marine_Mammal_Sanctuaries\/MapServer\/kml\/mapImage.kmz",
+          "type" : "agskml"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Marine_Mammal_Sanctuaries\/MapServer?f=nmf",
+          "type" : "agsnmf"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Marine_Mammal_Sanctuaries\/MapServer?f=lyr",
+          "type" : "agslyr"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/catalog\/search\/resource\/details.page?uuid=%7BDE6CC153-CDAA-48D4-A71E-025386FA4D64%7D",
+          "type" : "details"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/rest\/document?id=%7BDE6CC153-CDAA-48D4-A71E-025386FA4D64%7D",
+          "type" : "metadata"
+        }
+      ]
+    },
+    {
+      "title" : "DOC Partnership Regions",
+      "id" : "{05689CCD-19D8-497D-9518-0B63D3272094}",
+      "updated" : "2013-08-01T20:57:18Z",
+      "summary" : "This dataset is part of a set of 6 datasets that are used to create and represent Administration Boundaries effective from 2 September 2013. \n\nThey replace the Conservancy and Area datasets. \n\nThe RegionDistrictLinework is the master dataset. \n\nIt has bee...",
+      "bbox" : [-170.0, -52.0, 156.0, -27.5],
+      "geometry" : {
+        "type" : "Polygon",
+        "coordinates" : [
+          [
+            [-170.0,-52.0], [-170.0,-27.5], [156.0,-27.5], [156.0,-52.0], [-170.0,-52.0]
+          ]
+        ]
+      },
+      "links" : [
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Partnership_Regions\/MapServer",
+          "type" : "open"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/catalog\/search\/resource\/livedata-preview.page?uuid=%7B05689CCD-19D8-497D-9518-0B63D3272094%7D&url=http%3A%2F%2Fgeoportal.doc.govt.nz%2FArcGIS%2Frest%2Fservices%2FGeoportalServices%2FDOC_Partnership_Regions%2FMapServer&resourceType=ags&info=http%3A%2F%2Fgeoportal.doc.govt.nz%2Fgeoportal%2Frest%2Fdocument%3Ff%3Dhtml%26id%3D%257B05689CCD-19D8-497D-9518-0B63D3272094%257D",
+          "type" : "preview"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Partnership_Regions\/MapServer\/kml\/mapImage.kmz",
+          "type" : "agskml"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Partnership_Regions\/MapServer?f=nmf",
+          "type" : "agsnmf"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Partnership_Regions\/MapServer?f=lyr",
+          "type" : "agslyr"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/catalog\/search\/resource\/details.page?uuid=%7B05689CCD-19D8-497D-9518-0B63D3272094%7D",
+          "type" : "details"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/rest\/document?id=%7B05689CCD-19D8-497D-9518-0B63D3272094%7D",
+          "type" : "metadata"
+        }
+      ]
+    },
+    {
+      "title" : "DOC Partnership Districts",
+      "id" : "{D7F955C5-1D63-4167-9500-62FDB402571F}",
+      "updated" : "2013-08-01T20:56:24Z",
+      "summary" : "This dataset is part of a set of 6 datasets that are used to create and represent Administration Boundaries effective from 2 September 2013. They replace the Conservancy and Area datasets. The RegionDistrictLinework is the master dataset. It has been topo...",
+      "bbox" : [-170.0, -52.0, 156.0, -27.5],
+      "geometry" : {
+        "type" : "Polygon",
+        "coordinates" : [
+          [
+            [-170.0,-52.0], [-170.0,-27.5], [156.0,-27.5], [156.0,-52.0], [-170.0,-52.0]
+          ]
+        ]
+      },
+      "links" : [
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Partnership_Districts\/MapServer",
+          "type" : "open"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/catalog\/search\/resource\/livedata-preview.page?uuid=%7BD7F955C5-1D63-4167-9500-62FDB402571F%7D&url=http%3A%2F%2Fgeoportal.doc.govt.nz%2FArcGIS%2Frest%2Fservices%2FGeoportalServices%2FDOC_Partnership_Districts%2FMapServer&resourceType=ags&info=http%3A%2F%2Fgeoportal.doc.govt.nz%2Fgeoportal%2Frest%2Fdocument%3Ff%3Dhtml%26id%3D%257BD7F955C5-1D63-4167-9500-62FDB402571F%257D",
+          "type" : "preview"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Partnership_Districts\/MapServer\/kml\/mapImage.kmz",
+          "type" : "agskml"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Partnership_Districts\/MapServer?f=nmf",
+          "type" : "agsnmf"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Partnership_Districts\/MapServer?f=lyr",
+          "type" : "agslyr"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/catalog\/search\/resource\/details.page?uuid=%7BD7F955C5-1D63-4167-9500-62FDB402571F%7D",
+          "type" : "details"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/rest\/document?id=%7BD7F955C5-1D63-4167-9500-62FDB402571F%7D",
+          "type" : "metadata"
+        }
+      ]
+    },
+    {
+      "title" : "DOC Marine Reserves",
+      "id" : "{470D523A-96A6-4475-B182-066A024A0C96}",
+      "updated" : "2012-07-15T03:25:44Z",
+      "summary" : "A Marine Reserve is the government's most comprehensive tool in the provision of area-based biodiversity protection in the marine environment.\nMarine reserves are specified areas of the sea and foreshore that are managed to preserve them in their natural ...",
+      "bbox" : [-170.0, -52.0, 156.0, -27.5],
+      "geometry" : {
+        "type" : "Polygon",
+        "coordinates" : [
+          [
+            [-170.0,-52.0], [-170.0,-27.5], [156.0,-27.5], [156.0,-52.0], [-170.0,-52.0]
+          ]
+        ]
+      },
+      "links" : [
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Marine_Reserves\/MapServer",
+          "type" : "open"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/catalog\/search\/resource\/livedata-preview.page?uuid=%7B470D523A-96A6-4475-B182-066A024A0C96%7D&url=http%3A%2F%2Fgeoportal.doc.govt.nz%2FArcGIS%2Frest%2Fservices%2FGeoportalServices%2FDOC_Marine_Reserves%2FMapServer&resourceType=ags&info=http%3A%2F%2Fgeoportal.doc.govt.nz%2Fgeoportal%2Frest%2Fdocument%3Ff%3Dhtml%26id%3D%257B470D523A-96A6-4475-B182-066A024A0C96%257D",
+          "type" : "preview"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Marine_Reserves\/MapServer\/kml\/mapImage.kmz",
+          "type" : "agskml"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Marine_Reserves\/MapServer?f=nmf",
+          "type" : "agsnmf"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_Marine_Reserves\/MapServer?f=lyr",
+          "type" : "agslyr"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/catalog\/search\/resource\/details.page?uuid=%7B470D523A-96A6-4475-B182-066A024A0C96%7D",
+          "type" : "details"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/rest\/document?id=%7B470D523A-96A6-4475-B182-066A024A0C96%7D",
+          "type" : "metadata"
+        }
+      ]
+    },
+    {
+      "title" : "DOC Recreational Hunting Permit Areas",
+      "id" : "{14A38417-3E42-470C-B968-DFA664FD1642}",
+      "updated" : "2011-10-10T04:41:40Z",
+      "summary" : "Department of Conservation - Recreation Hunting Permit Areas. This dataset is the Department of Conservation's record of those parts of Public Conservation Land where recreational hunting may take place. \nIf hunting within these areas you MUST obtain a hu...",
+      "bbox" : [-170.0, -52.0, 156.0, -27.5],
+      "geometry" : {
+        "type" : "Polygon",
+        "coordinates" : [
+          [
+            [-170.0,-52.0], [-170.0,-27.5], [156.0,-27.5], [156.0,-52.0], [-170.0,-52.0]
+          ]
+        ]
+      },
+      "links" : [
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/arcgis\/rest\/services\/GeoportalServices\/DOC_Recreational_Hunting_Permit_Areas\/MapServer",
+          "type" : "open"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/catalog\/search\/resource\/livedata-preview.page?uuid=%7B14A38417-3E42-470C-B968-DFA664FD1642%7D&url=http%3A%2F%2Fgeoportal.doc.govt.nz%2Farcgis%2Frest%2Fservices%2FGeoportalServices%2FDOC_Recreational_Hunting_Permit_Areas%2FMapServer&resourceType=ags&info=http%3A%2F%2Fgeoportal.doc.govt.nz%2Fgeoportal%2Frest%2Fdocument%3Ff%3Dhtml%26id%3D%257B14A38417-3E42-470C-B968-DFA664FD1642%257D",
+          "type" : "preview"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/arcgis\/rest\/services\/GeoportalServices\/DOC_Recreational_Hunting_Permit_Areas\/MapServer\/kml\/mapImage.kmz",
+          "type" : "agskml"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/arcgis\/rest\/services\/GeoportalServices\/DOC_Recreational_Hunting_Permit_Areas\/MapServer?f=nmf",
+          "type" : "agsnmf"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/arcgis\/rest\/services\/GeoportalServices\/DOC_Recreational_Hunting_Permit_Areas\/MapServer?f=lyr",
+          "type" : "agslyr"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/catalog\/search\/resource\/details.page?uuid=%7B14A38417-3E42-470C-B968-DFA664FD1642%7D",
+          "type" : "details"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/rest\/document?id=%7B14A38417-3E42-470C-B968-DFA664FD1642%7D",
+          "type" : "metadata"
+        }
+      ]
+    },
+    {
+      "title" : "Distribution of Chamois in New Zealand (2007)",
+      "id" : "{A719DE68-2E32-49CE-83F7-F2E2000AF3CC}",
+      "updated" : "2013-02-05T20:14:41Z",
+      "summary" : "This dataset represents the terrestrial distribution of Chamois (Rupicapra rupicapra) in New Zealand (mainland New Zealand and Chatham Islands) as at 1 July 2007. It represents this species' final layer as part of the Natural Heritage Management Strategy ...",
+      "bbox" : [-180.0, -47.4, 180.0, -33.7],
+      "geometry" : {
+        "type" : "Polygon",
+        "coordinates" : [
+          [
+            [-180.0,-47.4], [-180.0,-33.7], [180.0,-33.7], [180.0,-47.4], [-180.0,-47.4]
+          ]
+        ]
+      },
+      "links" : [
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_BDIPEST_Chamois_2007\/MapServer",
+          "type" : "open"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/catalog\/search\/resource\/livedata-preview.page?uuid=%7BA719DE68-2E32-49CE-83F7-F2E2000AF3CC%7D&url=http%3A%2F%2Fgeoportal.doc.govt.nz%2FArcGIS%2Frest%2Fservices%2FGeoportalServices%2FDOC_BDIPEST_Chamois_2007%2FMapServer&resourceType=ags&info=http%3A%2F%2Fgeoportal.doc.govt.nz%2Fgeoportal%2Frest%2Fdocument%3Ff%3Dhtml%26id%3D%257BA719DE68-2E32-49CE-83F7-F2E2000AF3CC%257D",
+          "type" : "preview"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_BDIPEST_Chamois_2007\/MapServer\/kml\/mapImage.kmz",
+          "type" : "agskml"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_BDIPEST_Chamois_2007\/MapServer?f=nmf",
+          "type" : "agsnmf"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/ArcGIS\/rest\/services\/GeoportalServices\/DOC_BDIPEST_Chamois_2007\/MapServer?f=lyr",
+          "type" : "agslyr"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/catalog\/search\/resource\/details.page?uuid=%7BA719DE68-2E32-49CE-83F7-F2E2000AF3CC%7D",
+          "type" : "details"
+        },
+        {
+          "href" : "http:\/\/geoportal.doc.govt.nz\/geoportal\/rest\/document?id=%7BA719DE68-2E32-49CE-83F7-F2E2000AF3CC%7D",
+          "type" : "metadata"
+        }
+      ]
+    }
+  ]
+}

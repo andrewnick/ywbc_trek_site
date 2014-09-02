@@ -1,0 +1,198 @@
+{
+currentVersion: 10.03,
+id: 0,
+name: "DOC Tracks",
+type: "Feature Layer",
+description: "Track Centrelines - spatial representation of DOC managed track centrelines. Data shows actively managed open tracks. Closed tracks are not shown.",
+definitionExpression: "STATUS = 'OPEN'",
+geometryType: "esriGeometryPolyline",
+copyrightText: "",
+parentLayer: null,
+subLayers: [ ],
+minScale: 0,
+maxScale: 0,
+defaultVisibility: true,
+extent: {
+xmin: 1100115.3937,
+ymin: 4166343.6292,
+xmax: 2463511.8437,
+ymax: 6190524.2258,
+spatialReference: {
+wkid: 2193
+}
+},
+hasAttachments: false,
+htmlPopupType: "esriServerHTMLPopupTypeAsHTMLText",
+drawingInfo: {
+renderer: {
+type: "uniqueValue",
+field1: "OBJECT_TYPE_DESCRIPTION",
+field2: null,
+field3: null,
+fieldDelimiter: ", ",
+defaultSymbol: null,
+defaultLabel: "<all other values>",
+uniqueValueInfos: [
+{
+value: "Short Walk(disabled)",
+label: "Short Walk",
+description: "",
+symbol: {
+type: "esriSLS",
+style: "esriSLSSolid",
+color: [
+250,
+52,
+17,
+255
+],
+width: 1.5
+}
+},
+{
+value: "Short Walk",
+label: "Short Walk",
+description: "",
+symbol: {
+type: "esriSLS",
+style: "esriSLSSolid",
+color: [
+250,
+52,
+17,
+255
+],
+width: 1.5
+}
+},
+{
+value: "Walking Track",
+label: "Walking Track",
+description: "",
+symbol: {
+type: "esriSLS",
+style: "esriSLSSolid",
+color: [
+255,
+0,
+0,
+255
+],
+width: 1.5
+}
+},
+{
+value: "Tramping Track",
+label: "Tramping Track / Great Walk",
+description: "",
+symbol: {
+type: "esriSLS",
+style: "esriSLSSolid",
+color: [
+255,
+0,
+0,
+255
+],
+width: 1.5
+}
+},
+{
+value: "Great Walk",
+label: "Tramping Track / Great Walk",
+description: "",
+symbol: {
+type: "esriSLS",
+style: "esriSLSSolid",
+color: [
+255,
+0,
+0,
+255
+],
+width: 1.5
+}
+},
+{
+value: "Easy Tramping Track",
+label: "Tramping Track / Great Walk",
+description: "",
+symbol: {
+type: "esriSLS",
+style: "esriSLSSolid",
+color: [
+255,
+0,
+0,
+255
+],
+width: 1.5
+}
+},
+{
+value: "Route",
+label: "Route",
+description: "",
+symbol: {
+type: "esriSLS",
+style: "esriSLSSolid",
+color: [
+255,
+0,
+0,
+255
+],
+width: 3
+}
+}
+]
+},
+transparency: 0,
+labelingInfo: null
+},
+displayField: "DESCRIPTION",
+fields: [
+{
+name: "OBJECTID",
+type: "esriFieldTypeOID",
+alias: "OBJECTID"
+},
+{
+name: "CAPTURE_ACCURACY",
+type: "esriFieldTypeSmallInteger",
+alias: "CAPTURE_ACCURACY"
+},
+{
+name: "DESCRIPTION",
+type: "esriFieldTypeString",
+alias: "DESCRIPTION",
+length: 40
+},
+{
+name: "OBJECT_TYPE_DESCRIPTION",
+type: "esriFieldTypeString",
+alias: "OBJECT_TYPE_DESCRIPTION",
+length: 40
+},
+{
+name: "URL",
+type: "esriFieldTypeString",
+alias: "URL",
+length: 254
+},
+{
+name: "Shape",
+type: "esriFieldTypeGeometry",
+alias: "Shape"
+},
+{
+name: "Shape.len",
+type: "esriFieldTypeDouble",
+alias: "Shape.len"
+}
+],
+typeIdField: null,
+types: null,
+relationships: [ ],
+capabilities: "Map,Query,Data"
+}
