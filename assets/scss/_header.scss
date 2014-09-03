@@ -1,0 +1,25 @@
+.header_arrowLeft {
+	margin-top: 6px;
+	height: 20px;
+}
+
+.header_add {
+	margin-top: 6px;
+	height: 20px;
+}
+
+.header_container {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	vertical-align: middle;
+}
+
+.header_btn {
+	margin-top: 6px;
+	width: 72px;
+	height: 72px;
+
+	&:active {
+		background-color: $lite-brown;
+	}
+}

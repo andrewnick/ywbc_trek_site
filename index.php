@@ -1,27 +1,33 @@
+<?php 
+ 
+  session_start();
+  $_SESSION['user_id'] = 1;
+  $_SESSION['currentPage'] = 'entry';
+  $_SESSION['previousPage'] = 'home';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <?php 
-    require_once('includes/head.php');
-    require_once('includes/database_function.php');
 
-    $db =  getDbConnection();
+  require_once('includes/head.php');
+  require_once('includes/database_function.php');
+  $db =  getDbConnection(); 
+?>
 
-   ?>
 <body>
-
 	<main>
-
 		<?php 
 
-      if(isset($_POST['user_id'])) {
+      if(isset($_GET['pages'])){
 
-          require_once('includes/home.php');
-
-      } else {
-
-          require_once('includes/entry.php');
-
+          require_once('includes/'.$_GET['pages'].'.php');
       }
+      else {
+          require_once('includes/home.php');
+      }
+
 
     ?>
 
@@ -58,3 +64,63 @@
     <script src="bootstrap/assets/javascripts/bootstrap.js"></script>
 </body>
 </html>
+
+
+<!-- Code with login/sign up/ creating session 
+
+      var_dump($_SESSION);
+      var_dump($_POST);
+      if ($_SESSION['login'] == false) {
+          require_once('includes/'.$_SESSION['currentPage'].'.php');
+          // Check to see if user has submitted login or sign up information
+          if (isset($_POST['username'])) {
+              
+            $username = $_POST['username'];
+            $password = $_POST['password'];
+
+            if (($username != "") && ($password != "")) {
+                echo "username";
+                // if the login button was pressed try to login
+                if (isset($_POST['loginBtn'])) {
+                    // check database for login
+                    echo "<h1>Login!</h1>";
+                    // if successful create a session
+                   $_SESSION['currentPage'] = 'home';
+                   $_SESSION['login'] = true;
+
+                } else { // if the sign up button was pressed sign the user up.
+
+                  // add user to the database
+
+                  echo "<h1>Sign UP<h1>";
+                  // start up a session  
+                  $_SESSION['login'] = true;
+                }
+
+            } else {
+
+                if ($username == "") {
+
+                       echo '<h1>Please set a username</h1>';
+
+                } 
+
+                if ($password == "") {
+
+                      echo '<h1>Please set a password</h1>';
+
+                }
+            }
+          } 
+
+
+      } else {  // User has logged in. Therefore a session is active
+
+          // If back button has been pressed
+          // require_once('includes/'.$_SESSION['previousPage'].'php');
+          echo "login not set";
+          require_once('includes/'.$_SESSION['currentPage'].'<div class=""></div>php');
+
+      }
+
+ -->

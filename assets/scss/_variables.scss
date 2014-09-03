@@ -1,3 +1,5 @@
+
+
 $tablet: 750px;
 $desktop: 970px;
 $large: 1170px;
@@ -16,7 +18,8 @@ $green: #457f45;
 
 
 //Grid Dimensions
-
+$grid_base_width: 6px;
+$grid-gutter-width: $grid_base_width*3;
 //Header padding
 
 // Glyphicons location visible to scss compiler

@@ -1,25 +1,25 @@
 <?php 
 
-	if (isset($_POST['username']) AND isset($_POST['password'])) {
+	// if (isset($_POST['username']) AND isset($_POST['password'])) {
 		
-		$sql = 'SELECT *
-				FROM account 
-				WHERE name ='.$_POST['username'].' AND '.$_POST['password'];
+	// 	$sql = 'SELECT *
+	// 			FROM account 
+	// 			WHERE name ='.$_POST['username'].' AND '.$_POST['password'];
 
-		$result = selectMultipleRows($db, $sql);
+	// 	$result = selectMultipleRows($db, $sql);
 
-		if ($result) {
-			echo "welcome".$result[0][0];
-		} else {
-			echo '<h2>Account not found. Would you like to sign up?</h2>';
-		}
+	// 	if ($result) {
+	// 		echo "welcome".$result[0][0];
+	// 	} else {
+	// 		echo '<h2>Account not found. Would you like to sign up?</h2>';
+	// 	}
 
 
-	} else {
+	// } else {
 
-		echo "Please enter your username and password";
+	// 	echo "Please enter your username and password";
 
-	}
+	// }
 
 ?>
 
@@ -36,15 +36,15 @@
 
 		<form action="" method="post" role="form">
 			
-			<button type="submit" class="col-xs-12 entry_btn entry_btn_bold" id="loginBtn">
+			<button type="submit" class="col-xs-12 entry_btn entry_btn_bold" name="loginBtn" id="loginBtn">
 				<h5>Login</h5>
 			</button>		
 
-			<a href="#" class="col-xs-12 entry_btn_link" id="signUpBtn">
+			<button type="submit" class="col-xs-12 entry_btn_link" id="signUpBtn" name="signUpBtn">
 				<div class="entry_btn">
 					<h5>Sign Up</h5>
 				</div>
-			</a>
+			</button>
 
 			<div class="form-group">
 			

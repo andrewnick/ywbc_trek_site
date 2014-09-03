@@ -34,7 +34,7 @@ $(document).ready( function(){
 					dataType: 'jsonp',
 				});
 
-				if(i >= 2) {
+				if(i >= 100) {
 					return false;
 				}
 			});

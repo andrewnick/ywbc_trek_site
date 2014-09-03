@@ -1,0 +1,14 @@
+.home_item_container {
+	border-bottom: white 1px solid;
+	padding-top: 15px;
+	padding-bottom: 15px; 
+	padding-left: 15px;
+
+	&:first-child {
+		border-top: white 1px solid;
+	} 
+}
+
+.home_tramps_container {
+	margin-top: $grid_base_width*6;
+}
