@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 03, 2014 at 05:17 am
+-- Generation Time: Sep 03, 2014 at 05:35 am
 -- Server version: 5.1.44
 -- PHP Version: 5.3.1
 
@@ -82,21 +82,22 @@ CREATE TABLE IF NOT EXISTS `gearTotramp` (
 CREATE TABLE IF NOT EXISTS `location` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `tramp_id` int(11) NOT NULL,
-  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `type` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `location_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `location_type` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `xPoint` int(11) NOT NULL,
   `yPoint` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=4 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `location`
 --
 
-INSERT INTO `location` (`id`, `tramp_id`, `name`, `type`, `xPoint`, `yPoint`) VALUES
+INSERT INTO `location` (`id`, `tramp_id`, `location_name`, `location_type`, `xPoint`, `yPoint`) VALUES
 (1, 1, 'Kauri', 'Tramp', 3, 4),
 (2, 2, 'Matai', 'Hike', 5, 6),
-(3, 4, 'Totra', 'Walk', 7, 2);
+(3, 4, 'Totra', 'Walk', 7, 2),
+(4, 1, 'Hill', 'Walk', 3, 6);
 
 -- --------------------------------------------------------
 
@@ -106,8 +107,8 @@ INSERT INTO `location` (`id`, `tramp_id`, `name`, `type`, `xPoint`, `yPoint`) VA
 
 CREATE TABLE IF NOT EXISTS `tramp` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `acccount_id` int(255) NOT NULL,
-  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `account_id` int(255) NOT NULL,
+  `tramp_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6 ;
 
@@ -115,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `tramp` (
 -- Dumping data for table `tramp`
 --
 
-INSERT INTO `tramp` (`id`, `acccount_id`, `name`) VALUES
+INSERT INTO `tramp` (`id`, `account_id`, `tramp_name`) VALUES
 (1, 1, 'Heafy'),
 (2, 2, 'Milford'),
 (3, 1, 'Family Track'),

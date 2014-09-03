@@ -1,8 +1,10 @@
 <?php 
 
-	$sql = 'SELECT location_name, location_type  FROM tramp WHERE account_id ='.$_SESSION['user_id'];
+	$sql = 'SELECT t.tramp_name, l.location_name  FROM tramp t LEFT JOIN location l ON t.id = l.tramp_id WHERE t.id = l.tramp_id && t.account_id ='.$_SESSION['user_id'];
 	
 	$trampArray = selectMultipleRows($db, $sql);
+
+	var_dump($trampArray);
 
 ?>
 
@@ -34,8 +36,8 @@
 							<img src="assets/images/SplitShire_IMG_6207.jpg" alt="" class="img-responsive">
 					</div>
 					<div class="col-xs-8">
-							<h3 class=""><?php echo $value['location_name'] ?></h3>
-							<h4 class=""><?php echo $value['location_type'] ?></h4>
+							<h3 class=""><?php echo $value['tramp_name'] ?></h3>
+							<h4 class=""><?php echo $value['location_name'] ?></h4>
 					</div>	
 				</a>	
 			</article>
