@@ -3,13 +3,13 @@
 	$sql = 'SELECT t.tramp_name, l.location_name, l.tramp_id FROM tramp t LEFT JOIN location l ON t.id = l.tramp_id WHERE t.id = l.tramp_id && t.account_id ='.$_SESSION['user_id'];
 	
 	$trampArray = selectMultipleRows($db, $sql);
-	var_dump($trampArray);
+	//var_dump($trampArray);
 ?>
 
 <section class="container">
 	
 	<div class="header header_container row">
-		<a href="#" class="header_btn">		
+		<a href="index.php" class="header_btn">		
 			<img src="assets/icons/arrow487_left.svg" alt="Left Arrow" class="header_arrowLeft col-xs-2">
 		</a>
 
