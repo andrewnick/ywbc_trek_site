@@ -1,11 +1,9 @@
 <?php 
 
-	$sql = 'SELECT t.tramp_name, l.location_name  FROM tramp t LEFT JOIN location l ON t.id = l.tramp_id WHERE t.id = l.tramp_id && t.account_id ='.$_SESSION['user_id'];
+	$sql = 'SELECT t.tramp_name, l.location_name, l.tramp_id FROM tramp t LEFT JOIN location l ON t.id = l.tramp_id WHERE t.id = l.tramp_id && t.account_id ='.$_SESSION['user_id'];
 	
 	$trampArray = selectMultipleRows($db, $sql);
-
 	var_dump($trampArray);
-
 ?>
 
 <section class="container">
@@ -28,10 +26,10 @@
 
 	<section class="home_tramps_container">
 
-		<?php foreach ($trampArray as $key => $value) : ?>
+		<?php foreach ($trampArray as $value) : ?>
 
-			<article class="home_item_container home_item_container-first row">
-				<a href="?pages=tramp">
+			<article class="home_item_container row">
+				<a href="?pages=tramp&tramp_id=<?php echo $value['tramp_id'] ?>">
 					<div class="col-xs-4">
 							<img src="assets/images/SplitShire_IMG_6207.jpg" alt="" class="img-responsive">
 					</div>
@@ -47,7 +45,6 @@
 	</section>
 
 </section>
-
 
 <!-- background: -moz-linear-gradient(top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 57%, rgba(0,0,0,0.5) 67%, rgba(255,255,255,0) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.7)), color-stop(57%,rgba(0,0,0,0.7)), color-stop(67%,rgba(0,0,0,0.5)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */

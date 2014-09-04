@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 03, 2014 at 05:35 am
+-- Generation Time: Sep 04, 2014 at 07:07 am
 -- Server version: 5.1.44
 -- PHP Version: 5.3.1
 
@@ -47,12 +47,17 @@ CREATE TABLE IF NOT EXISTS `gear` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `item` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `gear`
 --
 
+INSERT INTO `gear` (`id`, `item`) VALUES
+(1, 'pack'),
+(2, 'boots'),
+(3, 'socks'),
+(4, 'jacket');
 
 -- --------------------------------------------------------
 
@@ -61,17 +66,22 @@ CREATE TABLE IF NOT EXISTS `gear` (
 --
 
 CREATE TABLE IF NOT EXISTS `gearTotramp` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
   `tramp_id` int(11) NOT NULL,
   `gear_id` int(11) NOT NULL,
   `quantity` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+  `checked` tinyint(1) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `gearTotramp`
 --
 
+INSERT INTO `gearTotramp` (`tramp_id`, `gear_id`, `quantity`, `checked`) VALUES
+(1, 2, 5, 1),
+(1, 1, 2, 1),
+(2, 3, 2, 1),
+(1, 3, 5, 1),
+(1, 4, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -97,7 +107,7 @@ INSERT INTO `location` (`id`, `tramp_id`, `location_name`, `location_type`, `xPo
 (1, 1, 'Kauri', 'Tramp', 3, 4),
 (2, 2, 'Matai', 'Hike', 5, 6),
 (3, 4, 'Totra', 'Walk', 7, 2),
-(4, 1, 'Hill', 'Walk', 3, 6);
+(4, 3, 'Hill', 'Walk', 3, 6);
 
 -- --------------------------------------------------------
 

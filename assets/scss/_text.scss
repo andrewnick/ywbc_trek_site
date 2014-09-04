@@ -26,6 +26,11 @@ h2 {
 	text-align: center;
 	line-height: 36px;
 
+	&.tramp_title {
+		text-transform: none;
+		text-align: left;
+	}
+
 }
 
 h3 {
