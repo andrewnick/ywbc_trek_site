@@ -2,7 +2,6 @@
 	$tramp_id = $_GET['tramp_id'];
 ?>
 
-
 <section class="container">
 	
 	<div class="header header_container row">

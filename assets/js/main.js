@@ -111,7 +111,7 @@ function addMarker (latLng, map, track) {
 
 	// console.log(name);
 
-	var contentString = '<h3>'+name+'<h3>';
+	var contentString = '<h3>'+name+'</h3>';
 
 	infowindow = new google.maps.InfoWindow({
 	      content: contentString

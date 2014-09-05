@@ -40,20 +40,18 @@
 				<h5>Login</h5>
 			</button>		
 
-			<button type="submit" class="col-xs-12 entry_btn_link" id="signUpBtn" name="signUpBtn">
-				<div class="entry_btn">
+			<button type="submit" class="col-xs-12 entry_btn entry_btn_link" id="signUpBtn" name="signUpBtn">
 					<h5>Sign Up</h5>
-				</div>
 			</button>
 
-			<div class="form-group">
+			<div class="form-group entry_hide_fields">
 			
 				<label for="username">Username</label>
 				<input type="text" name="username" id="username" class="form-control">
 
 			</div>
 				
-			<div class="form-group"> 
+			<div class="form-group entry_hide_fields"> 
 
 				<label for="password">Password</label>
 				<input type="text" name="password" id="password" class="form-control">

@@ -24,6 +24,26 @@
 		<h2> Tramps </h2>
 	</div>
 
+<!-- 	<div class="tramp">
+		
+		<h2>Add Tramp</h2>	
+
+		<form action="" method="post" role="form">
+			
+	
+			<div class="form-group">
+			
+				<label for="trampName">Tramp Name</label>
+				<input type="text" name="trampName" id="trampName" class="form-control">
+
+			</div>
+
+			<button type="submit" class="col-xs-12 entry_btn entry_btn_bold" name="loginBtn" id="loginBtn">
+				<h5>Login</h5>
+			</button>
+		</form>
+	</div> -->
+
 	<section class="home_tramps_container">
 
 		<?php foreach ($trampArray as $value) : ?>
