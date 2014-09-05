@@ -34,7 +34,7 @@ $(document).ready( function(){
 					dataType: 'jsonp',
 				});
 
-				if(i >= 100) {
+				if(i >= 10) {
 					return false;
 				}
 			});
@@ -44,7 +44,7 @@ $(document).ready( function(){
 		error: function () {
 			console.log('failed result');
 		},
-		dataType: 'jsonp',
+		dataType: 'jsonp'
 	});
 
 	// $('.entry_btn_link').on('click', function (event) {
@@ -56,6 +56,12 @@ $(document).ready( function(){
 	// 	console.log(username);
 	// 	console.log(password);
 	// });
+
+	$('#addTramp').on('click', function(event) {
+		event.preventDefault();
+		//alert('hello');
+		$('.home_add_tramp').toggle();
+	});
 });
 
 // Set up javascript 

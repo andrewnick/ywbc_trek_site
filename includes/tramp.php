@@ -29,7 +29,7 @@
  	?>
 
 	<article class="home_item_container home_item_container-first row">
-			<a href="index.php/?pages=map">
+			<a href="?pages=map">
 				<h2 class="tramp_title col-xs-12">Track</h2>
 				<h3 class="col-xs-12">Name: <?php echo $trampArray[0]['location_name'] ?></h3>
 				<h4 class="col-xs-12">Type: <?php echo $trampArray[0]['location_type'] ?></h4>
@@ -44,9 +44,9 @@
 					$isAllChecked = false;
 
 					$sql = 'SELECT t.`checked` 
-					 		FROM gearToTramp t
+					 		FROM gearTotramp t
 					 		LEFT JOIN gear g ON t.`gear_id` = g.`id`
-					 		WHERE t.`tramp_id` ='.$tramp_id;
+					 		WHERE t.`tramp_id` =1';//.$_GET['tramp_id'];
 
 					$trampArray = selectMultipleRows($db, $sql);
 					

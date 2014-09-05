@@ -9,7 +9,7 @@
 	
 	<!-- Andriod App setup -->
 	<meta name="mobile-web-app-capable" content="yes">
-	<link rel="icon" sizes="192x192" href="assets/images/apple-touch-icon-iphone.png">
+	<link rel="icon" sizes="183x185" href="assets/images/apple-touch-icon-iphone.png">
 
 	<!-- Apple App setup -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
